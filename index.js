@@ -30,6 +30,8 @@ app.use(session({
 app.use('/', require('./src/routes/anotacaoRoutes'))
 app.use('/', require('./src/routes/usuarioRoutes'))
 
+db.sync(() => console.log("database conectado"))
+
 const app_port = 8080
 app.listen(app_port, function () {
     console.log('app rodando na porta ' + app_port)

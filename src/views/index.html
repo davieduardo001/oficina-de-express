@@ -17,6 +17,14 @@
 
                     <h1>@note</h1>
 
+                    {{#suesso}}
+                    <div class="alert alert-success">usuario cadastrado com sucesso</div>
+                    {{/suesso}}
+
+                    {{#erro}}
+                    <div class="alert alert-danger">usuario cadastrado com ERRO</div>
+                    {{/erro}}
+
                     <form action="/" method="post">
                         <div class="mb-1 mt-1">
                           <label for="email" class="form-label">Email:</label>
@@ -37,8 +45,8 @@
                           <input type="email" class="form-control" id="email" name="email">
                         </div>
                         <div class="mb-1">
-                          <label for="password" class="form-label">Senha:</label>
-                          <input type="password" class="form-control" id="password" name="password">
+                          <label for="senha" class="form-label">Senha:</label>
+                          <input type="password" class="form-control" id="senha" name="senha">
                         </div>
                         <div class="mb-1">
                           <label for="nome" class="form-label">Nome:</label>

@@ -15,7 +15,7 @@ const Usuario = database.define('usuario', {
         unique: true
     },
 
-    password: {
+    senha: {
         type: Sequelize.STRING,
         allowNull: false,
     },
