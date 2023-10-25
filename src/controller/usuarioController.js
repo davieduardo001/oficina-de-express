@@ -1,5 +1,12 @@
+const Usuario = require('../model/usuario')
+
 function cadastrarUsuario(req, res) {
-    console.log("nya")
+    let usuario = {
+        email: "",
+        password: "",
+        nome: "",
+        data_nascimento: "",
+    }
 }
 
 module.exports = {
