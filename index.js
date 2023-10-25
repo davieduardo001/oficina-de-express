@@ -28,6 +28,7 @@ app.use(session({
 // Define as rotas da aplicação (declaradas na pasta /src/routes/)
 // requisicao get rendenizando o arquivo index.html
 app.use('/', require('./src/routes/anotacaoRoutes'))
+app.use('/', require('./src/routes/usuarioRoutes'))
 
 const app_port = 8080
 app.listen(app_port, function () {
