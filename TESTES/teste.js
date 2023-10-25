@@ -19,7 +19,7 @@ console.log("a soma eh: " + n3)
 let pessoa = {
     nome: "Jao",
     dizerOla: function () {
-        console.log("olá me chamo " + this.nome)  
+        console.log("olá me chamo " + this.nome + 2 + 2)  
     }
 }
 
